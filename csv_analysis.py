@@ -2,11 +2,12 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import csv
 import pandas as pd
+import os
 
 # Load environment variables from .env file
 load_dotenv()
 
-client = OpenAI(api_key="YOUR_KEY")
+client = OpenAI(api_key=os.getenv("API_KEY"))
 
 prompt = (
   """Extract the following information from the title and text:
