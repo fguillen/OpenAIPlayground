@@ -1,0 +1,91 @@
+> ruby costs_analysis_general_info.rb
+Ignoring mysql2-0.5.3 because its extensions are not built. Try: gem pristine mysql2 --version 0.5.3
+>>> prompt: You are a friendly and acurate data analysis assistant.
+Extract the information from the costs csv file below and give me
+a short report of your findings.
+
+Here you have the costs csv file:
+
+Year,January,February,March,April,May,June,July,August,September,October,November,December
+2024,86379,73242,81974,160204,150451,190813,280710,313335,155596,92893,78945,133334
+2023,80706,68341,74120,148413,139990,171423,262952,288566,144885,86596,73365,119042
+
+>>> response: {
+  "id": "chatcmpl-9Vkut4BqL0q2BFDuimOnRHqgLfKTZ",
+  "object": "chat.completion",
+  "created": 1717355543,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Cost Analysis Report\n\n#### Overview\nThe provided data contains monthly costs for the years 2023 and 2024. The analysis focuses on identifying trends, comparing yearly costs, and highlighting significant observations.\n\n#### Yearly Comparison\n- **Total Annual Costs**:\n  - **2024**: 1,798,476\n  - **2023**: 1,637,399\n\n  The total annual cost in 2024 increased by 161,077 compared to 2023.\n\n#### Monthly Analysis\n- **Highest Monthly Costs**:\n  - **2024**: August (313,335)\n  - **2023**: August (288,566)\n\n  August had the highest costs in both years, with a notable increase in 2024.\n\n- **Lowest Monthly Costs**:\n  - **2024**: February (73,242)\n  - **2023**: February (68,341)\n\n  February had the lowest costs in both years, with a slight increase in 2024.\n\n#### Monthly Trends\n- **January to March**:\n  - Costs in the first quarter show a gradual increase from January to March in both years.\n  - **2024**: 86,379 (Jan) to 81,974 (Mar)\n  - **2023**: 80,706 (Jan) to 74,120 (Mar)\n\n- **April to June**:\n  - Significant jump in costs in April and a steady increase through June.\n  - **2024**: 160,204 (Apr) to 190,813 (Jun)\n  - **2023**: 148,413 (Apr) to 171,423 (Jun)\n\n- **July to September**:\n  - Peak costs in July and August, followed by a drop in September.\n  - **2024**: 280,710 (Jul) to 155,596 (Sep)\n  - **2023**: 262,952 (Jul) to 144,885 (Sep)\n\n- **October to December**:\n  - Costs decrease towards the end of the year.\n  - **2024**: 92,893 (Oct) to 133,334 (Dec)\n  - **2023**: 86,596 (Oct) to 119,042 (Dec)\n\n#### Key Observations\n1. **August** consistently has the highest costs, indicating a potential seasonal or operational factor driving expenses during this month.\n2. **February** consistently has the lowest costs, suggesting a period of reduced activity or efficiency improvements.\n3. The overall increase in costs from 2023 to 2024 suggests either an expansion in operations or increased expenses in various areas.\n\n#### Conclusion\nThe data indicates a clear pattern of higher costs during mid-year, particularly in August, and lower costs at the beginning and end of the year. The increase in total annual costs from 2023 to 2024 warrants further investigation to understand the underlying causes, whether they are due to increased operational activities, inflation, or other factors."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 150,
+    "completion_tokens": 627,
+    "total_tokens": 777
+  },
+  "system_fingerprint": "fp_319be4768e"
+}
+>>> result: ### Cost Analysis Report
+
+#### Overview
+The provided data contains monthly costs for the years 2023 and 2024. The analysis focuses on identifying trends, comparing yearly costs, and highlighting significant observations.
+
+#### Yearly Comparison
+- **Total Annual Costs**:
+  - **2024**: 1,798,476
+  - **2023**: 1,637,399
+
+  The total annual cost in 2024 increased by 161,077 compared to 2023.
+
+#### Monthly Analysis
+- **Highest Monthly Costs**:
+  - **2024**: August (313,335)
+  - **2023**: August (288,566)
+
+  August had the highest costs in both years, with a notable increase in 2024.
+
+- **Lowest Monthly Costs**:
+  - **2024**: February (73,242)
+  - **2023**: February (68,341)
+
+  February had the lowest costs in both years, with a slight increase in 2024.
+
+#### Monthly Trends
+- **January to March**:
+  - Costs in the first quarter show a gradual increase from January to March in both years.
+  - **2024**: 86,379 (Jan) to 81,974 (Mar)
+  - **2023**: 80,706 (Jan) to 74,120 (Mar)
+
+- **April to June**:
+  - Significant jump in costs in April and a steady increase through June.
+  - **2024**: 160,204 (Apr) to 190,813 (Jun)
+  - **2023**: 148,413 (Apr) to 171,423 (Jun)
+
+- **July to September**:
+  - Peak costs in July and August, followed by a drop in September.
+  - **2024**: 280,710 (Jul) to 155,596 (Sep)
+  - **2023**: 262,952 (Jul) to 144,885 (Sep)
+
+- **October to December**:
+  - Costs decrease towards the end of the year.
+  - **2024**: 92,893 (Oct) to 133,334 (Dec)
+  - **2023**: 86,596 (Oct) to 119,042 (Dec)
+
+#### Key Observations
+1. **August** consistently has the highest costs, indicating a potential seasonal or operational factor driving expenses during this month.
+2. **February** consistently has the lowest costs, suggesting a period of reduced activity or efficiency improvements.
+3. The overall increase in costs from 2023 to 2024 suggests either an expansion in operations or increased expenses in various areas.
+
+#### Conclusion
+The data indicates a clear pattern of higher costs during mid-year, particularly in August, and lower costs at the beginning and end of the year. The increase in total annual costs from 2023 to 2024 warrants further investigation to understand the underlying causes, whether they are due to increased operational activities, inflation, or other factors.
+
+ ~/Development/Studying/OpenAITest01 | main ?2 ...................................................................................................................................................................................... 13s | .python_env py | system node | 21:12:34
+>
