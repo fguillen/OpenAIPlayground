@@ -1,0 +1,50 @@
+>>> response: {
+  "id": "chatcmpl-9Vkf1fIRjg74324W4zYqqreruxXDM",
+  "object": "chat.completion",
+  "created": 1717354559,
+  "model": "gpt-3.5-turbo-16k-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Let me analyze the costs csv file and provide you with the answers to your questions.\n\n1. What is the month with higher costs?\nBased on the provided data, the month with higher costs is July.\n\n2. How much was the costs in the month with higher costs?\nIn July, the costs amounted to 280,710.\n\n3. What month has the biggest increase in costs from the same month in the previous year?\nTo determine the month with the biggest increase in costs from the same month in the previous year, we need to compare the costs for each month in 2024 with the corresponding month in 2023. Here is the comparison:\n\n- January: Costs increased by 5,673\n- February: Costs increased by 4,901\n- March: Costs increased by 7,854\n- April: Costs increased by 11,791\n- May: Costs increased by 10,461\n- June: Costs increased by 19,390\n- July: Costs increased by 17,758\n- August: Costs increased by 24,769\n- September: Costs increased by 10,711\n- October: Costs increased by 6,297\n- November: Costs increased by 5,580\n- December: Costs increased by 14,292\n\nFrom the comparison, we can see that the month with the biggest increase in costs from the same month in the previous year is August, with an increase of 24,769.\n\nI hope this information helps! Let me know if you have any further questions."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 318,
+    "total_tokens": 524
+  },
+  "system_fingerprint": null
+}
+>>> result: Sure! Let me analyze the costs csv file and provide you with the answers to your questions.
+
+1. What is the month with higher costs?
+Based on the provided data, the month with higher costs is July.
+
+2. How much was the costs in the month with higher costs?
+In July, the costs amounted to 280,710.
+
+3. What month has the biggest increase in costs from the same month in the previous year?
+To determine the month with the biggest increase in costs from the same month in the previous year, we need to compare the costs for each month in 2024 with the corresponding month in 2023. Here is the comparison:
+
+- January: Costs increased by 5,673
+- February: Costs increased by 4,901
+- March: Costs increased by 7,854
+- April: Costs increased by 11,791
+- May: Costs increased by 10,461
+- June: Costs increased by 19,390
+- July: Costs increased by 17,758
+- August: Costs increased by 24,769
+- September: Costs increased by 10,711
+- October: Costs increased by 6,297
+- November: Costs increased by 5,580
+- December: Costs increased by 14,292
+
+From the comparison, we can see that the month with the biggest increase in costs from the same month in the previous year is August, with an increase of 24,769.
+
+I hope this information helps! Let me know if you have any further questions.

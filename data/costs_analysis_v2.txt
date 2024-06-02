@@ -1,0 +1,79 @@
+>>> response: {
+  "id": "chatcmpl-9VkZPD926oly2o6o0EmEhYxBU9viR",
+  "object": "chat.completion",
+  "created": 1717354211,
+  "model": "gpt-3.5-turbo-16k-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Let me extract the information from the costs CSV file and answer your questions:\n\n1. To find the month with higher costs, I will calculate the total costs for each month in both years and compare them.\n\nIn 2024:\n- January: 86,379\n- February: 73,242\n- March: 81,974\n- April: 160,204\n- May: 150,451\n- June: 190,813\n- July: 280,710\n- August: 313,335\n- September: 155,596\n- October: 92,893\n- November: 78,945\n- December: 133,334\n\nIn 2023:\n- January: 80,706\n- February: 68,341\n- March: 74,120\n- April: 148,413\n- May: 139,990\n- June: 171,423\n- July: 262,952\n- August: 288,566\n- September: 144,885\n- October: 86,596\n- November: 73,365\n- December: 119,042\n\nThe month with the higher costs in 2024 is August, with 313,335 costs.\n\n2. The costs in the month with higher costs (August 2024) were 313,335.\n\n3. To find the month with the biggest increase in costs from the same month in the previous year, I will calculate the difference between the costs of each month in 2024 and the costs of the same month in 2023.\n\n- January: 86,379 - 80,706 = 5,673\n- February: 73,242 - 68,341 = 4,901\n- March: 81,974 - 74,120 = 7,854\n- April: 160,204 - 148,413 = 11,791\n- May: 150,451 - 139,990 = 10,461\n- June: 190,813 - 171,423 = 19,390\n- July: 280,710 - 262,952 = 17,758\n- August: 313,335 - 288,566 = 24,769\n- September: 155,596 - 144,885 = 10,711\n- October: 92,893 - 86,596 = 6,297\n- November: 78,945 - 73,365 = 5,580\n- December: 133,334 - 119,042 = 14,292\n\nThe month with the biggest increase in costs from the same month in the previous year is August, with an increase of 24,769.\n\nI hope this information is helpful! Let me know if you have any other questions."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 596,
+    "total_tokens": 802
+  },
+  "system_fingerprint": null
+}
+
+
+>>> result: Sure! Let me extract the information from the costs CSV file and answer your questions:
+
+1. To find the month with higher costs, I will calculate the total costs for each month in both years and compare them.
+
+In 2024:
+- January: 86,379
+- February: 73,242
+- March: 81,974
+- April: 160,204
+- May: 150,451
+- June: 190,813
+- July: 280,710
+- August: 313,335
+- September: 155,596
+- October: 92,893
+- November: 78,945
+- December: 133,334
+
+In 2023:
+- January: 80,706
+- February: 68,341
+- March: 74,120
+- April: 148,413
+- May: 139,990
+- June: 171,423
+- July: 262,952
+- August: 288,566
+- September: 144,885
+- October: 86,596
+- November: 73,365
+- December: 119,042
+
+The month with the higher costs in 2024 is August, with 313,335 costs.
+
+2. The costs in the month with higher costs (August 2024) were 313,335.
+
+3. To find the month with the biggest increase in costs from the same month in the previous year, I will calculate the difference between the costs of each month in 2024 and the costs of the same month in 2023.
+
+- January: 86,379 - 80,706 = 5,673
+- February: 73,242 - 68,341 = 4,901
+- March: 81,974 - 74,120 = 7,854
+- April: 160,204 - 148,413 = 11,791
+- May: 150,451 - 139,990 = 10,461
+- June: 190,813 - 171,423 = 19,390
+- July: 280,710 - 262,952 = 17,758
+- August: 313,335 - 288,566 = 24,769
+- September: 155,596 - 144,885 = 10,711
+- October: 92,893 - 86,596 = 6,297
+- November: 78,945 - 73,365 = 5,580
+- December: 133,334 - 119,042 = 14,292
+
+The month with the biggest increase in costs from the same month in the previous year is August, with an increase of 24,769.
+
+I hope this information is helpful! Let me know if you have any other questions.

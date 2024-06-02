@@ -11,7 +11,7 @@ def client
       log_errors: true # Highly recommended in development, so you can see what errors OpenAI is returning. Not recommended in production.
     )
 
-  puts ">>> models.list: #{JSON.pretty_generate(@client.models.list)}"
+  # puts ">>> models.list: #{JSON.pretty_generate(@client.models.list)}"
 
   @client.models.retrieve(id: "gpt-4o")
 
@@ -39,15 +39,17 @@ def extract_info(csv_data)
   response =
     client.chat(
       parameters: {
-        model: "gpt-3.5-turbo-16k", # Required.
+        model: "gpt-4o", # Required.
         messages: [{ role: "user", content: prompt}], # Required.
-        temperature: 0.7,
+        temperature: 0,
       })
 
   puts ">>> response: #{JSON.pretty_generate(response)}"
 
   response.dig("choices", 0, "message", "content")
 end
+
+
 
 result = extract_info(File.read("data/costs.csv"))
 

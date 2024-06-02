@@ -1,0 +1,118 @@
+>>> prompt: You are a friendly and acurate data analysis assistant.
+Your job is to extract information from a costs csv file. And
+answer the questions from our user in a friendly mode.
+
+Here is the questions of our user:
+1. What is the month with higher costs?
+2. How much was the costs in the month with higher costs?
+3. What month has the biggest increase in costs from same month in previous year?
+
+Here you have the costs csv file:
+
+Year,January,February,March,April,May,June,July,August,September,October,November,December
+2024,86379,73242,81974,160204,150451,190813,280710,313335,155596,92893,78945,133334
+2023,80706,68341,74120,148413,139990,171423,262952,288566,144885,86596,73365,119042
+
+>>> response: {
+  "id": "chatcmpl-9Vko9pPK6LmyLNYEWtMKxtCyAqaIn",
+  "object": "chat.completion",
+  "created": 1717355125,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, I'd be happy to help you with that! Let's analyze the data from the CSV file to answer your questions.\n\n### 1. What is the month with higher costs?\n\nTo find the month with the highest costs, we need to compare the costs for each month across both years.\n\n### 2. How much was the costs in the month with higher costs?\n\nOnce we identify the month with the highest costs, we can then determine the exact amount for that month.\n\n### 3. What month has the biggest increase in costs from the same month in the previous year?\n\nTo find the month with the biggest increase in costs from the same month in the previous year, we need to calculate the difference in costs for each month between 2024 and 2023.\n\nLet's start by organizing the data:\n\n#### Data from CSV:\n- **2024 Costs:**\n  - January: 86379\n  - February: 73242\n  - March: 81974\n  - April: 160204\n  - May: 150451\n  - June: 190813\n  - July: 280710\n  - August: 313335\n  - September: 155596\n  - October: 92893\n  - November: 78945\n  - December: 133334\n\n- **2023 Costs:**\n  - January: 80706\n  - February: 68341\n  - March: 74120\n  - April: 148413\n  - May: 139990\n  - June: 171423\n  - July: 262952\n  - August: 288566\n  - September: 144885\n  - October: 86596\n  - November: 73365\n  - December: 119042\n\n### Analysis:\n\n#### 1. Month with Higher Costs:\n- The highest cost in 2024 is in August with 313,335.\n- The highest cost in 2023 is in August with 288,566.\n\nSo, the month with the highest costs overall is **August 2024**.\n\n#### 2. Costs in the Month with Higher Costs:\n- The cost in August 2024 is **313,335**.\n\n#### 3. Month with the Biggest Increase in Costs from the Same Month in the Previous Year:\nTo find the biggest increase, we calculate the difference for each month:\n\n- January: 86379 - 80706 = 5673\n- February: 73242 - 68341 = 4901\n- March: 81974 - 74120 = 7854\n- April: 160204 - 148413 = 11791\n- May: 150451 - 139990 = 10461\n- June: 190813 - 171423 = 19390\n- July: 280710 - 262952 = 17758\n- August: 313335 - 288566 = 24769\n- September: 155596 - 144885 = 10711\n- October: 92893 - 86596 = 6297\n- November: 78945 - 73365 = 5580\n- December: 133334 - 119042 = 14292\n\nThe month with the biggest increase in costs from the same month in the previous year is **August**, with an increase of **24,769**.\n\n### Summary:\n1. The month with the highest costs is **August 2024**.\n2. The costs in the month with the highest costs (August 2024) are **313,335**.\n3. The month with the biggest increase in costs from the same month in the previous year is **August**, with an increase of **24,769**.\n\nI hope this helps! If you have any more questions or need further analysis, feel free to ask!"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 204,
+    "completion_tokens": 803,
+    "total_tokens": 1007
+  },
+  "system_fingerprint": "fp_319be4768e"
+}
+>>> result: Sure, I'd be happy to help you with that! Let's analyze the data from the CSV file to answer your questions.
+
+### 1. What is the month with higher costs?
+
+To find the month with the highest costs, we need to compare the costs for each month across both years.
+
+### 2. How much was the costs in the month with higher costs?
+
+Once we identify the month with the highest costs, we can then determine the exact amount for that month.
+
+### 3. What month has the biggest increase in costs from the same month in the previous year?
+
+To find the month with the biggest increase in costs from the same month in the previous year, we need to calculate the difference in costs for each month between 2024 and 2023.
+
+Let's start by organizing the data:
+
+#### Data from CSV:
+- **2024 Costs:**
+  - January: 86379
+  - February: 73242
+  - March: 81974
+  - April: 160204
+  - May: 150451
+  - June: 190813
+  - July: 280710
+  - August: 313335
+  - September: 155596
+  - October: 92893
+  - November: 78945
+  - December: 133334
+
+- **2023 Costs:**
+  - January: 80706
+  - February: 68341
+  - March: 74120
+  - April: 148413
+  - May: 139990
+  - June: 171423
+  - July: 262952
+  - August: 288566
+  - September: 144885
+  - October: 86596
+  - November: 73365
+  - December: 119042
+
+### Analysis:
+
+#### 1. Month with Higher Costs:
+- The highest cost in 2024 is in August with 313,335.
+- The highest cost in 2023 is in August with 288,566.
+
+So, the month with the highest costs overall is **August 2024**.
+
+#### 2. Costs in the Month with Higher Costs:
+- The cost in August 2024 is **313,335**.
+
+#### 3. Month with the Biggest Increase in Costs from the Same Month in the Previous Year:
+To find the biggest increase, we calculate the difference for each month:
+
+- January: 86379 - 80706 = 5673
+- February: 73242 - 68341 = 4901
+- March: 81974 - 74120 = 7854
+- April: 160204 - 148413 = 11791
+- May: 150451 - 139990 = 10461
+- June: 190813 - 171423 = 19390
+- July: 280710 - 262952 = 17758
+- August: 313335 - 288566 = 24769
+- September: 155596 - 144885 = 10711
+- October: 92893 - 86596 = 6297
+- November: 78945 - 73365 = 5580
+- December: 133334 - 119042 = 14292
+
+The month with the biggest increase in costs from the same month in the previous year is **August**, with an increase of **24,769**.
+
+### Summary:
+1. The month with the highest costs is **August 2024**.
+2. The costs in the month with the highest costs (August 2024) are **313,335**.
+3. The month with the biggest increase in costs from the same month in the previous year is **August**, with an increase of **24,769**.
+
+I hope this helps! If you have any more questions or need further analysis, feel free to ask!

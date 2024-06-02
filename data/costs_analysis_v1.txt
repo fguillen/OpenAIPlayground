@@ -1,0 +1,5 @@
+>>> result: Sure, I can help you with that! Let me analyze the data for you.
+
+1. The month with higher costs is July.
+2. The costs in the month with higher costs (July) is 280,710.87 €.
+3. The month with the biggest increase in costs from the same month in the previous year is April.
