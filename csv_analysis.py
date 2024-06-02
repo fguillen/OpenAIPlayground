@@ -1,8 +1,12 @@
-import openai
+from dotenv import load_dotenv
+from openai import OpenAI
 import csv
 import pandas as pd
 
-openai.api_key = "YOUR_KEY"
+# Load environment variables from .env file
+load_dotenv()
+
+client = OpenAI(api_key="YOUR_KEY")
 
 prompt = (
   """Extract the following information from the title and text:
@@ -13,13 +17,11 @@ prompt = (
 )
 
 def extract_info(text):
-  completions = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo-16k",
-    messages=[
-      {"role": "user", "content": prompt+"\n\n"+text}
-    ],
-    temperature=0.3,
-  )
+  completions = client.chat.completions.create(model="gpt-3.5-turbo-16k",
+  messages=[
+    {"role": "user", "content": prompt+"\n\n"+text}
+  ],
+  temperature=0.3)
   message = completions.choices[0].message.content
   return message
 
