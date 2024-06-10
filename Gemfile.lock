@@ -1,9 +1,20 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.8.6)
+      public_suffix (>= 2.0.2, < 6.0)
+    baran (0.1.12)
     bigdecimal (3.1.8)
+    colorize (1.1.0)
     data_uri (0.1.0)
     dotenv (3.1.2)
+    event_stream_parser (1.0.0)
+    faraday (2.9.1)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.1.0)
+      net-http
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-aarch64-linux-musl)
     ffi (1.17.0-arm-linux-gnu)
@@ -29,19 +40,38 @@ GEM
       mime-types (>= 3.3.1)
       multi_json (~> 1.11)
       native-package-installer
-    langchain (0.1.0)
+    json-schema (4.3.0)
+      addressable (>= 2.8)
+    langchainrb (0.13.3)
+      baran (~> 0.1.9)
+      colorize (~> 1.1.0)
+      json-schema (~> 4)
+      matrix
+      pragmatic_segmenter (~> 0.3.0)
+      to_bool (~> 2.0.0)
+      zeitwerk (~> 2.5)
+    matrix (0.4.2)
     mime-types (3.5.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2024.0604)
     multi_json (1.15.0)
+    multipart-post (2.4.1)
     native-package-installer (1.1.9)
-    openai (0.3.0)
+    net-http (0.4.1)
+      uri
+    pragmatic_segmenter (0.3.23)
+      unicode
     psych (5.1.2)
       stringio
+    public_suffix (5.0.5)
     rdoc (6.7.0)
       psych (>= 4.0.0)
     reline (0.5.8)
       io-console (~> 0.5)
+    ruby-openai (6.3.1)
+      event_stream_parser (>= 0.3.0, < 2.0.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
     sequel (5.81.0)
       bigdecimal
     sqlite3 (2.0.2-aarch64-linux-gnu)
@@ -55,6 +85,10 @@ GEM
     sqlite3 (2.0.2-x86_64-linux-gnu)
     sqlite3 (2.0.2-x86_64-linux-musl)
     stringio (3.1.0)
+    to_bool (2.0.0)
+    unicode (0.4.4.4)
+    uri (0.13.0)
+    zeitwerk (2.6.15)
 
 PLATFORMS
   aarch64-linux-gnu
@@ -71,8 +105,8 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   iruby
-  langchain
-  openai
+  langchainrb
+  ruby-openai (~> 6.3.0)
   sequel
   sqlite3
 
